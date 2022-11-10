@@ -101,6 +101,7 @@ void Game::tossTime(){
     std::cin.ignore();
     std::vector<std::string> options = {"bat", "bowl"};
     std::vector<int> teamIds = {0, 1};
+    srand(time(NULL));
     int randomOption = rand()%2, randomId = rand()%2;
     std::string tossResult = instance->teams[randomId].teamName + " has won the toss and decided to " + options[randomOption] + " first\n";
     if(options[randomOption] == "bat"){
@@ -125,7 +126,8 @@ int Game::getBowlerForNewOver(std::vector<int>& bowlersIds, int lastBowlerId, in
     std::vector<int> :: iterator pos = std::find(bowlersIds.begin(), bowlersIds.end(), lastBowlerId);
     if(pos != bowlersIds.end())
         bowlersIds.erase(pos);
-               
+
+        srand(time(NULL));       
         int randomBowler = rand()%(bowlersIds.size());
         int resId = bowlersIds[randomBowler];
                
@@ -194,12 +196,14 @@ std::string Game::getOutcomeOnBall(FileReader& obj, int teamBattingId, int teamB
     }
 
     std::vector<std::string> outcomes = stringSplit(outcomesOnBowlCard[bowlCard][shot][timing], '|');
-
+    
+    srand(time(NULL));
     int randomOutcome = rand()%(outcomes.size());
     std::string outcome = outcomes[randomOutcome]; 
     toLowerCase(outcome);
     
     std::vector<std::string> comments = instance->commentary[outcome];
+    srand(time(NULL));
     int randomComment = rand()%(comments.size());
     overSummary = overSummary + "   " + comments[randomComment]+"\n";
     instance->commentaryWriter->appendNextLine("   " + comments[randomComment]+"\n");
