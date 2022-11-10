@@ -1,0 +1,810 @@
+india has won the toss and decided to bowl first
+
+Let's begin innings one
+
+over 0.1:-
+   bowler: rohit sharma
+   striker: aaron finch
+   nonstriker: camron green
+   rohit sharma bowls doosra to aaron finch
+   aaron finch tries to play straight shot 
+   What a delivery !!
+   team runs: 0
+   team wickets: 0
+over 0.2:-
+   bowler: rohit sharma
+   striker: aaron finch
+   nonstriker: camron green
+   rohit sharma bowls bouncer to aaron finch
+   aaron finch tries to play uppercut shot 
+   Excellent line and length !!
+   team runs: 0
+   team wickets: 0
+over 0.3:-
+   bowler: rohit sharma
+   striker: aaron finch
+   nonstriker: camron green
+   rohit sharma bowls slowerball to aaron finch
+   aaron finch tries to play sweep shot 
+   It's a wicket !!!
+   team runs: 0
+   team wickets: 1
+over 0.4:-
+   bowler: rohit sharma
+   striker: david warner
+   nonstriker: camron green
+   rohit sharma bowls offbreak to david warner
+   david warner tries to play scoop shot 
+   Excellent running between the wickets, 2 runs on this ball 
+   team runs: 2
+   team wickets: 1
+over 0.5:-
+   bowler: rohit sharma
+   striker: david warner
+   nonstriker: camron green
+   rohit sharma bowls doosra to david warner
+   david warner tries to play straight shot 
+   Excellent running between the wickets, 3 runs on this ball
+   team runs: 5
+   team wickets: 1
+over 0.6:-
+   bowler: rohit sharma
+   striker: camron green
+   nonstriker: david warner
+   rohit sharma bowls doosra to camron green
+   camron green tries to play scoop shot 
+   Edged and taken !!!
+   team runs: 5
+   team wickets: 2
+over 1.1:-
+   bowler: bhuvneshwar kumar
+   striker: david warner
+   nonstriker: hazelwood
+   bhuvneshwar kumar bowls pace to david warner
+   david warner tries to play squarecut shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 9
+   team wickets: 2
+over 1.2:-
+   bowler: bhuvneshwar kumar
+   striker: david warner
+   nonstriker: hazelwood
+   bhuvneshwar kumar bowls offbreak to david warner
+   david warner tries to play leglance shot 
+   Excellent effort on the boundary, 3 runs on this ball
+   team runs: 12
+   team wickets: 2
+over 1.3:-
+   bowler: bhuvneshwar kumar
+   striker: hazelwood
+   nonstriker: david warner
+   bhuvneshwar kumar bowls inswinger to hazelwood
+   hazelwood tries to play leglance shot 
+   Excellent effort on the boundary, 3 runs on this ball
+   team runs: 15
+   team wickets: 2
+over 1.4:-
+   bowler: bhuvneshwar kumar
+   striker: david warner
+   nonstriker: hazelwood
+   bhuvneshwar kumar bowls outswinger to david warner
+   david warner tries to play sweep shot 
+   Edged and taken !!!
+   team runs: 15
+   team wickets: 3
+over 1.5:-
+   bowler: bhuvneshwar kumar
+   striker: maxwell
+   nonstriker: hazelwood
+   bhuvneshwar kumar bowls pace to maxwell
+   maxwell tries to play squarecut shot 
+   Excellent effort on the boundary, 3 runs on this ball
+   team runs: 18
+   team wickets: 3
+over 1.6:-
+   bowler: bhuvneshwar kumar
+   striker: hazelwood
+   nonstriker: maxwell
+   bhuvneshwar kumar bowls slowerball to hazelwood
+   hazelwood tries to play uppercut shot 
+   Excellent line and length !!
+   team runs: 18
+   team wickets: 3
+over 2.1:-
+   bowler: rohit sharma
+   striker: maxwell
+   nonstriker: hazelwood
+   rohit sharma bowls pace to maxwell
+   maxwell tries to play uppercut shot 
+   That's massive and out of the ground !! Batter gets 6 runs
+   team runs: 24
+   team wickets: 3
+over 2.2:-
+   bowler: rohit sharma
+   striker: maxwell
+   nonstriker: hazelwood
+   rohit sharma bowls offbreak to maxwell
+   maxwell tries to play longon shot 
+   Excellent running between the wickets, 3 runs on this ball
+   team runs: 27
+   team wickets: 3
+over 2.3:-
+   bowler: rohit sharma
+   striker: hazelwood
+   nonstriker: maxwell
+   rohit sharma bowls inswinger to hazelwood
+   hazelwood tries to play longon shot 
+   Just over the fielder, only one run
+   team runs: 28
+   team wickets: 3
+over 2.4:-
+   bowler: rohit sharma
+   striker: maxwell
+   nonstriker: hazelwood
+   rohit sharma bowls offbreak to maxwell
+   maxwell tries to play flick shot 
+   Excellent running between the wickets, 3 runs on this ball
+   team runs: 31
+   team wickets: 3
+over 2.5:-
+   bowler: rohit sharma
+   striker: hazelwood
+   nonstriker: maxwell
+   rohit sharma bowls legcutter to hazelwood
+   hazelwood tries to play sweep shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 35
+   team wickets: 3
+over 2.6:-
+   bowler: rohit sharma
+   striker: hazelwood
+   nonstriker: maxwell
+   rohit sharma bowls offbreak to hazelwood
+   hazelwood tries to play leglance shot 
+   Excellent running between the wickets, 2 runs on this ball 
+   team runs: 37
+   team wickets: 3
+over 3.1:-
+   bowler: mohammad shami
+   striker: maxwell
+   nonstriker: hazelwood
+   mohammad shami bowls pace to maxwell
+   maxwell tries to play uppercut shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 41
+   team wickets: 3
+over 3.2:-
+   bowler: mohammad shami
+   striker: maxwell
+   nonstriker: hazelwood
+   mohammad shami bowls doosra to maxwell
+   maxwell tries to play uppercut shot 
+   Excellent line and length !!
+   team runs: 41
+   team wickets: 3
+over 3.3:-
+   bowler: mohammad shami
+   striker: maxwell
+   nonstriker: hazelwood
+   mohammad shami bowls outswinger to maxwell
+   maxwell tries to play scoop shot 
+   Edged and taken !!!
+   team runs: 41
+   team wickets: 4
+over 3.4:-
+   bowler: mohammad shami
+   striker: mitchell starc
+   nonstriker: hazelwood
+   mohammad shami bowls inswinger to mitchell starc
+   mitchell starc tries to play sweep shot 
+   It's a wicket !!!
+   team runs: 41
+   team wickets: 5
+over 3.5:-
+   bowler: mohammad shami
+   striker: pat cummins
+   nonstriker: hazelwood
+   mohammad shami bowls bouncer to pat cummins
+   pat cummins tries to play leglance shot 
+   Excellent line and length !!
+   team runs: 41
+   team wickets: 5
+over 3.6:-
+   bowler: mohammad shami
+   striker: pat cummins
+   nonstriker: hazelwood
+   mohammad shami bowls slowerball to pat cummins
+   pat cummins tries to play squarecut shot 
+   Excellent running between the wickets, 3 runs on this ball
+   team runs: 44
+   team wickets: 5
+over 4.1:-
+   bowler: jasprit bumrah
+   striker: pat cummins
+   nonstriker: hazelwood
+   jasprit bumrah bowls bouncer to pat cummins
+   pat cummins tries to play uppercut shot 
+   What a delivery !!
+   team runs: 44
+   team wickets: 5
+over 4.2:-
+   bowler: jasprit bumrah
+   striker: pat cummins
+   nonstriker: hazelwood
+   jasprit bumrah bowls bouncer to pat cummins
+   pat cummins tries to play squarecut shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 48
+   team wickets: 5
+over 4.3:-
+   bowler: jasprit bumrah
+   striker: pat cummins
+   nonstriker: hazelwood
+   jasprit bumrah bowls legcutter to pat cummins
+   pat cummins tries to play sweep shot 
+   It's a wicket !!!
+   team runs: 48
+   team wickets: 6
+over 4.4:-
+   bowler: jasprit bumrah
+   striker: stoinis
+   nonstriker: hazelwood
+   jasprit bumrah bowls legcutter to stoinis
+   stoinis tries to play pull shot 
+   Excellent line and length !!
+   team runs: 48
+   team wickets: 6
+over 4.5:-
+   bowler: jasprit bumrah
+   striker: stoinis
+   nonstriker: hazelwood
+   jasprit bumrah bowls outswinger to stoinis
+   stoinis tries to play coverdrive shot 
+   Excellent line and length !!
+   team runs: 48
+   team wickets: 6
+over 4.6:-
+   bowler: jasprit bumrah
+   striker: stoinis
+   nonstriker: hazelwood
+   jasprit bumrah bowls outswinger to stoinis
+   stoinis tries to play flick shot 
+   Excellent line and length !!
+   team runs: 48
+   team wickets: 6
+over 5.1:-
+   bowler: virat kohli
+   striker: hazelwood
+   nonstriker: stoinis
+   virat kohli bowls offbreak to hazelwood
+   hazelwood tries to play uppercut shot 
+   Excellent line and length !!
+   team runs: 48
+   team wickets: 6
+over 5.2:-
+   bowler: virat kohli
+   striker: hazelwood
+   nonstriker: stoinis
+   virat kohli bowls legcutter to hazelwood
+   hazelwood tries to play straight shot 
+   What a delivery !!
+   team runs: 48
+   team wickets: 6
+over 5.3:-
+   bowler: virat kohli
+   striker: hazelwood
+   nonstriker: stoinis
+   virat kohli bowls slowerball to hazelwood
+   hazelwood tries to play leglance shot 
+   Excellent running between the wickets, 2 runs on this ball 
+   team runs: 50
+   team wickets: 6
+over 5.4:-
+   bowler: virat kohli
+   striker: hazelwood
+   nonstriker: stoinis
+   virat kohli bowls doosra to hazelwood
+   hazelwood tries to play longon shot 
+   Excellent effort on the boundary, 3 runs on this ball
+   team runs: 53
+   team wickets: 6
+over 5.5:-
+   bowler: virat kohli
+   striker: stoinis
+   nonstriker: hazelwood
+   virat kohli bowls yorker to stoinis
+   stoinis tries to play sweep shot 
+   Edged and taken !!!
+   team runs: 53
+   team wickets: 7
+over 5.6:-
+   bowler: virat kohli
+   striker: tim david
+   nonstriker: hazelwood
+   virat kohli bowls bouncer to tim david
+   tim david tries to play straight shot 
+   Excellent line and length !!
+   team runs: 53
+   team wickets: 7
+over 6.1:-
+   bowler: chahal
+   striker: hazelwood
+   nonstriker: tim david
+   chahal bowls legcutter to hazelwood
+   hazelwood tries to play squarecut shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 57
+   team wickets: 7
+over 6.2:-
+   bowler: chahal
+   striker: hazelwood
+   nonstriker: tim david
+   chahal bowls offcutter to hazelwood
+   hazelwood tries to play pull shot 
+   Excellent line and length !!
+   team runs: 57
+   team wickets: 7
+over 6.3:-
+   bowler: chahal
+   striker: hazelwood
+   nonstriker: tim david
+   chahal bowls bouncer to hazelwood
+   hazelwood tries to play uppercut shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 61
+   team wickets: 7
+over 6.4:-
+   bowler: chahal
+   striker: hazelwood
+   nonstriker: tim david
+   chahal bowls legcutter to hazelwood
+   hazelwood tries to play straight shot 
+   What a delivery !!
+   team runs: 61
+   team wickets: 7
+over 6.5:-
+   bowler: chahal
+   striker: hazelwood
+   nonstriker: tim david
+   chahal bowls outswinger to hazelwood
+   hazelwood tries to play coverdrive shot 
+   Batter hits in a gap, convert ones into twos
+   team runs: 63
+   team wickets: 7
+over 6.6:-
+   bowler: chahal
+   striker: hazelwood
+   nonstriker: tim david
+   chahal bowls outswinger to hazelwood
+   hazelwood tries to play scoop shot 
+   It's a wicket !!!
+   team runs: 63
+   team wickets: 8
+over 7.1:-
+   bowler: mohammad shami
+   striker: tim david
+   nonstriker: wade
+   mohammad shami bowls offcutter to tim david
+   tim david tries to play pull shot 
+   Excellent line and length !!
+   team runs: 63
+   team wickets: 8
+over 7.2:-
+   bowler: mohammad shami
+   striker: tim david
+   nonstriker: wade
+   mohammad shami bowls inswinger to tim david
+   tim david tries to play coverdrive shot 
+   It's a wicket !!!
+   team runs: 63
+   team wickets: 9
+over 7.3:-
+   bowler: mohammad shami
+   striker: zampa
+   nonstriker: wade
+   mohammad shami bowls doosra to zampa
+   zampa tries to play pull shot 
+   What a delivery !!
+   team runs: 63
+   team wickets: 9
+over 7.4:-
+   bowler: mohammad shami
+   striker: zampa
+   nonstriker: wade
+   mohammad shami bowls bouncer to zampa
+   zampa tries to play straight shot 
+   What a delivery !!
+   team runs: 63
+   team wickets: 9
+over 7.5:-
+   bowler: mohammad shami
+   striker: zampa
+   nonstriker: wade
+   mohammad shami bowls pace to zampa
+   zampa tries to play straight shot 
+   Excellent effort on the boundary, 3 runs on this ball
+   team runs: 66
+   team wickets: 9
+over 7.6:-
+   bowler: mohammad shami
+   striker: wade
+   nonstriker: zampa
+   mohammad shami bowls pace to wade
+   wade tries to play longon shot 
+   Excellent effort on the boundary, 3 runs on this ball
+   team runs: 69
+   team wickets: 9
+over 8.1:-
+   bowler: virat kohli
+   striker: wade
+   nonstriker: zampa
+   virat kohli bowls offcutter to wade
+   wade tries to play uppercut shot 
+   What a delivery !!
+   team runs: 69
+   team wickets: 9
+over 8.2:-
+   bowler: virat kohli
+   striker: wade
+   nonstriker: zampa
+   virat kohli bowls slowerball to wade
+   wade tries to play flick shot 
+   What a delivery !!
+   team runs: 69
+   team wickets: 9
+over 8.3:-
+   bowler: virat kohli
+   striker: wade
+   nonstriker: zampa
+   virat kohli bowls inswinger to wade
+   wade tries to play squarecut shot 
+   It's a wicket !!!
+
+end of innings: australia score - 69/10
+
+Let's begin innings two
+
+over 0.1:-
+   bowler: camron green
+   striker: ashwin
+   nonstriker: bhuvneshwar kumar
+   camron green bowls bouncer to ashwin
+   ashwin tries to play longon shot 
+   What a delivery !!
+   team runs: 0
+   team wickets: 0
+over 0.2:-
+   bowler: camron green
+   striker: ashwin
+   nonstriker: bhuvneshwar kumar
+   camron green bowls bouncer to ashwin
+   ashwin tries to play flick shot 
+   What a delivery !!
+   team runs: 0
+   team wickets: 0
+over 0.3:-
+   bowler: camron green
+   striker: ashwin
+   nonstriker: bhuvneshwar kumar
+   camron green bowls offcutter to ashwin
+   ashwin tries to play coverdrive shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 4
+   team wickets: 0
+over 0.4:-
+   bowler: camron green
+   striker: ashwin
+   nonstriker: bhuvneshwar kumar
+   camron green bowls offbreak to ashwin
+   ashwin tries to play straight shot 
+   Excellent line and length !!
+   team runs: 4
+   team wickets: 0
+over 0.5:-
+   bowler: camron green
+   striker: ashwin
+   nonstriker: bhuvneshwar kumar
+   camron green bowls legcutter to ashwin
+   ashwin tries to play scoop shot 
+   Excellent line and length !!
+   team runs: 4
+   team wickets: 0
+over 0.6:-
+   bowler: camron green
+   striker: ashwin
+   nonstriker: bhuvneshwar kumar
+   camron green bowls inswinger to ashwin
+   ashwin tries to play coverdrive shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 8
+   team wickets: 0
+over 1.1:-
+   bowler: mitchell starc
+   striker: bhuvneshwar kumar
+   nonstriker: ashwin
+   mitchell starc bowls outswinger to bhuvneshwar kumar
+   bhuvneshwar kumar tries to play pull shot 
+   What a delivery !!
+   team runs: 8
+   team wickets: 0
+over 1.2:-
+   bowler: mitchell starc
+   striker: bhuvneshwar kumar
+   nonstriker: ashwin
+   mitchell starc bowls outswinger to bhuvneshwar kumar
+   bhuvneshwar kumar tries to play flick shot 
+   Excellent line and length !!
+   team runs: 8
+   team wickets: 0
+over 1.3:-
+   bowler: mitchell starc
+   striker: bhuvneshwar kumar
+   nonstriker: ashwin
+   mitchell starc bowls yorker to bhuvneshwar kumar
+   bhuvneshwar kumar tries to play sweep shot 
+   Edged and taken !!!
+   team runs: 8
+   team wickets: 1
+over 1.4:-
+   bowler: mitchell starc
+   striker: chahal
+   nonstriker: ashwin
+   mitchell starc bowls doosra to chahal
+   chahal tries to play pull shot 
+   Excellent line and length !!
+   team runs: 8
+   team wickets: 1
+over 1.5:-
+   bowler: mitchell starc
+   striker: chahal
+   nonstriker: ashwin
+   mitchell starc bowls yorker to chahal
+   chahal tries to play sweep shot 
+   Edged and taken !!!
+   team runs: 8
+   team wickets: 2
+over 1.6:-
+   bowler: mitchell starc
+   striker: hardik pandya
+   nonstriker: ashwin
+   mitchell starc bowls bouncer to hardik pandya
+   hardik pandya tries to play sweep shot 
+   What a delivery !!
+   team runs: 8
+   team wickets: 2
+over 2.1:-
+   bowler: tim david
+   striker: ashwin
+   nonstriker: hardik pandya
+   tim david bowls pace to ashwin
+   ashwin tries to play sweep shot 
+   Excellent running between the wickets, 2 runs on this ball 
+   team runs: 10
+   team wickets: 2
+over 2.2:-
+   bowler: tim david
+   striker: ashwin
+   nonstriker: hardik pandya
+   tim david bowls slowerball to ashwin
+   ashwin tries to play longon shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 14
+   team wickets: 2
+over 2.3:-
+   bowler: tim david
+   striker: ashwin
+   nonstriker: hardik pandya
+   tim david bowls doosra to ashwin
+   ashwin tries to play coverdrive shot 
+   Excellent running between the wickets, 3 runs on this ball
+   team runs: 17
+   team wickets: 2
+over 2.4:-
+   bowler: tim david
+   striker: hardik pandya
+   nonstriker: ashwin
+   tim david bowls legcutter to hardik pandya
+   hardik pandya tries to play pull shot 
+   Excellent line and length !!
+   team runs: 17
+   team wickets: 2
+over 2.5:-
+   bowler: tim david
+   striker: hardik pandya
+   nonstriker: ashwin
+   tim david bowls outswinger to hardik pandya
+   hardik pandya tries to play scoop shot 
+   It's a wicket !!!
+   team runs: 17
+   team wickets: 3
+over 2.6:-
+   bowler: tim david
+   striker: jasprit bumrah
+   nonstriker: ashwin
+   tim david bowls bouncer to jasprit bumrah
+   jasprit bumrah tries to play uppercut shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 21
+   team wickets: 3
+over 3.1:-
+   bowler: stoinis
+   striker: ashwin
+   nonstriker: jasprit bumrah
+   stoinis bowls outswinger to ashwin
+   ashwin tries to play sweep shot 
+   Edged and taken !!!
+   team runs: 21
+   team wickets: 4
+over 3.2:-
+   bowler: stoinis
+   striker: kl rahul
+   nonstriker: jasprit bumrah
+   stoinis bowls offbreak to kl rahul
+   kl rahul tries to play sweep shot 
+   Excellent line and length !!
+   team runs: 21
+   team wickets: 4
+over 3.3:-
+   bowler: stoinis
+   striker: kl rahul
+   nonstriker: jasprit bumrah
+   stoinis bowls yorker to kl rahul
+   kl rahul tries to play uppercut shot 
+   It's a wicket !!!
+   team runs: 21
+   team wickets: 5
+over 3.4:-
+   bowler: stoinis
+   striker: mahendra singh dhoni
+   nonstriker: jasprit bumrah
+   stoinis bowls offcutter to mahendra singh dhoni
+   mahendra singh dhoni tries to play scoop shot 
+   Excellent line and length !!
+   team runs: 21
+   team wickets: 5
+over 3.5:-
+   bowler: stoinis
+   striker: mahendra singh dhoni
+   nonstriker: jasprit bumrah
+   stoinis bowls legcutter to mahendra singh dhoni
+   mahendra singh dhoni tries to play longon shot 
+   What a beautiful shot !! Batter gets 4 runs
+   team runs: 25
+   team wickets: 5
+over 3.6:-
+   bowler: stoinis
+   striker: mahendra singh dhoni
+   nonstriker: jasprit bumrah
+   stoinis bowls offbreak to mahendra singh dhoni
+   mahendra singh dhoni tries to play longon shot 
+   Batter hits in a gap, convert ones into twos
+   team runs: 27
+   team wickets: 5
+over 4.1:-
+   bowler: maxwell
+   striker: jasprit bumrah
+   nonstriker: mahendra singh dhoni
+   maxwell bowls bouncer to jasprit bumrah
+   jasprit bumrah tries to play sweep shot 
+   What a delivery !!
+   team runs: 27
+   team wickets: 5
+over 4.2:-
+   bowler: maxwell
+   striker: jasprit bumrah
+   nonstriker: mahendra singh dhoni
+   maxwell bowls bouncer to jasprit bumrah
+   jasprit bumrah tries to play squarecut shot 
+   It's a wicket !!!
+   team runs: 27
+   team wickets: 6
+over 4.3:-
+   bowler: maxwell
+   striker: mohammad shami
+   nonstriker: mahendra singh dhoni
+   maxwell bowls doosra to mohammad shami
+   mohammad shami tries to play uppercut shot 
+   Excellent line and length !!
+   team runs: 27
+   team wickets: 6
+over 4.4:-
+   bowler: maxwell
+   striker: mohammad shami
+   nonstriker: mahendra singh dhoni
+   maxwell bowls yorker to mohammad shami
+   mohammad shami tries to play straight shot 
+   Excellent line and length !!
+   team runs: 27
+   team wickets: 6
+over 4.5:-
+   bowler: maxwell
+   striker: mohammad shami
+   nonstriker: mahendra singh dhoni
+   maxwell bowls inswinger to mohammad shami
+   mohammad shami tries to play sweep shot 
+   Edged and taken !!!
+   team runs: 27
+   team wickets: 7
+over 4.6:-
+   bowler: maxwell
+   striker: rohit sharma
+   nonstriker: mahendra singh dhoni
+   maxwell bowls slowerball to rohit sharma
+   rohit sharma tries to play uppercut shot 
+   What a delivery !!
+   team runs: 27
+   team wickets: 7
+over 5.1:-
+   bowler: tim david
+   striker: mahendra singh dhoni
+   nonstriker: rohit sharma
+   tim david bowls pace to mahendra singh dhoni
+   mahendra singh dhoni tries to play sweep shot 
+   Edged and taken !!!
+   team runs: 27
+   team wickets: 8
+over 5.2:-
+   bowler: tim david
+   striker: surya kumar yadav
+   nonstriker: rohit sharma
+   tim david bowls offcutter to surya kumar yadav
+   surya kumar yadav tries to play sweep shot 
+   Edged and taken !!!
+   team runs: 27
+   team wickets: 9
+over 5.3:-
+   bowler: tim david
+   striker: virat kohli
+   nonstriker: rohit sharma
+   tim david bowls doosra to virat kohli
+   virat kohli tries to play leglance shot 
+   Just over the fielder, only one run
+   team runs: 28
+   team wickets: 9
+over 5.4:-
+   bowler: tim david
+   striker: rohit sharma
+   nonstriker: virat kohli
+   tim david bowls inswinger to rohit sharma
+   rohit sharma tries to play scoop shot 
+   Excellent line and length !!
+   team runs: 28
+   team wickets: 9
+over 5.5:-
+   bowler: tim david
+   striker: rohit sharma
+   nonstriker: virat kohli
+   tim david bowls outswinger to rohit sharma
+   rohit sharma tries to play leglance shot 
+   What a delivery !!
+   team runs: 28
+   team wickets: 9
+over 5.6:-
+   bowler: tim david
+   striker: rohit sharma
+   nonstriker: virat kohli
+   tim david bowls offcutter to rohit sharma
+   rohit sharma tries to play longon shot 
+   Batter hits in a gap, convert ones into twos
+   team runs: 30
+   team wickets: 9
+over 6.1:-
+   bowler: mitchell starc
+   striker: virat kohli
+   nonstriker: rohit sharma
+   mitchell starc bowls inswinger to virat kohli
+   virat kohli tries to play pull shot 
+   What a delivery !!
+   team runs: 30
+   team wickets: 9
+over 6.2:-
+   bowler: mitchell starc
+   striker: virat kohli
+   nonstriker: rohit sharma
+   mitchell starc bowls doosra to virat kohli
+   virat kohli tries to play sweep shot 
+   Edged and taken !!!
+
+end of innings: india score - 30/10
+
+australia won the match by 39 runs
