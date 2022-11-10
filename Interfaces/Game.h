@@ -44,9 +44,10 @@ class Game{
            void loadCommentary(std::string filePath);
            void createTeams();
            void loadInput(std::string inputFilePath, int maxOvers, int noOfTeams);
-           int getBowlerForNewOver(std::vector<int>& bowlersIds, int lastBowlerId, int teamBowlingFirstId, int maxOversBowlerCanBowl);
+           int getBowlerForNewOver(std::vector<int>& bowlersIds, int lastBowlerId, int teamBowlingFirstId, int maxOversBowlerCanBowl, int maxBallsBowlerCanBowlInOneOver);
            std::string getOutcomeOnBall(FileReader& obj, int teamBattingId, int teamBowlingId, int batterId, int bowlerId, std::string& overSummary);
            void startInnings(int teamBattingId, int teamBowlingId, FileReader& obj, int maxOvers, int maxWkts, int maxOversBowlerCanBowl, int maxBallsInOneOver, int target);
+           void updateSummaryOfOneInnings(int teamBattingId, int teamBowlingId);
            void updateSummary();
 };
 

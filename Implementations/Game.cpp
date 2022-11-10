@@ -122,7 +122,7 @@ void Game::tossTime(){
 }
 
 
-int Game::getBowlerForNewOver(std::vector<int>& bowlersIds, int lastBowlerId, int teamBowlingFirstId, int maxOversBowlerCanBowl){
+int Game::getBowlerForNewOver(std::vector<int>& bowlersIds, int lastBowlerId, int teamBowlingFirstId, int maxOversBowlerCanBowl, int maxBallsBowlerCanBowlInOneOver){
     std::vector<int> :: iterator pos = std::find(bowlersIds.begin(), bowlersIds.end(), lastBowlerId);
     if(pos != bowlersIds.end())
         bowlersIds.erase(pos);
@@ -131,7 +131,7 @@ int Game::getBowlerForNewOver(std::vector<int>& bowlersIds, int lastBowlerId, in
         int randomBowler = rand()%(bowlersIds.size());
         int resId = bowlersIds[randomBowler];
                
-        if((lastBowlerId != -1) && (instance->teams[teamBowlingFirstId].players[lastBowlerId].getBallsBowled() < maxOversBowlerCanBowl*6)){
+        if((lastBowlerId != -1) && (instance->teams[teamBowlingFirstId].players[lastBowlerId].getBallsBowled() < maxOversBowlerCanBowl*maxBallsBowlerCanBowlInOneOver)){
             bowlersIds.push_back(lastBowlerId);                       
         }
 
@@ -232,7 +232,7 @@ void Game::startInnings(int teamBattingId, int teamBowlingId, FileReader& obj, i
         std::cin.ignore();
 
         // decide bowler
-        int newBowlerId = getBowlerForNewOver(bowlersIds, lastBowlerId, teamBowlingId, maxOversBowlerCanBowl);
+        int newBowlerId = getBowlerForNewOver(bowlersIds, lastBowlerId, teamBowlingId, maxOversBowlerCanBowl, maxBallsInOneOver);
     
         for(int ball=1; ball<=maxBallsInOneOver; ball++){
             commentaryLine = "over " + std::to_string(over) + "." + std::to_string(ball) +":-\n";
@@ -323,9 +323,9 @@ void Game::startInnings(int teamBattingId, int teamBowlingId, FileReader& obj, i
 }
 
 
-void Game::updateSummary(){
-    Team& battingFirst = instance->teams[teamBattingFirstId];
-    Team& bowlingFirst = instance->teams[teamBowlingFirstId];
+void Game::updateSummaryOfOneInnings(int teamBattingId, int teamBowlingId){
+    Team& battingFirst = instance->teams[teamBattingId];
+    Team& bowlingFirst = instance->teams[teamBowlingId];
 
     std::string summaryLine;
     summaryLine = "\n" + battingFirst.teamName + " batting scorecard:-\n\n";
@@ -342,23 +342,13 @@ void Game::updateSummary(){
         instance->summaryWriter->appendNextLine(summaryLine);
     }
     summaryLine = "\n" + battingFirst.teamName + " score- " + std::to_string(battingFirst.getTeamruns()) + "/" + std::to_string(battingFirst.getTeamWickets()) + "\n\n"; 
-    instance->summaryWriter->appendNextLine(summaryLine);
+    instance->summaryWriter->appendNextLine(summaryLine); 
+}
 
-    summaryLine = "\n" + bowlingFirst.teamName + " batting scorecard:-\n\n";
-    instance->summaryWriter->appendNextLine(summaryLine);
-    for(auto& player : bowlingFirst.players){
-        summaryLine = player.playerName + " scored " + std::to_string(player.getRunsScored()) + " runs from " + std::to_string(player.getBallsPlayed()) + " balls\n"; 
-        instance->summaryWriter->appendNextLine(summaryLine);
-    }
-    summaryLine = "\n" + battingFirst.teamName + " bowling scorecard:-\n\n";
-    instance->summaryWriter->appendNextLine(summaryLine);
-    for(auto& playerId : battingFirst.bowlersIDs){
-        Player& p = battingFirst.players[playerId];
-        summaryLine = p.playerName + " gave away " + std::to_string(p.getRunsGivenAway()) + " runs from " + std::to_string(p.getBallsBowled()) + " balls\n"; 
-        instance->summaryWriter->appendNextLine(summaryLine);
-    }
-    summaryLine = "\n" + bowlingFirst.teamName + " score- " + std::to_string(bowlingFirst.getTeamruns()) + "/" + std::to_string(bowlingFirst.getTeamWickets()) + "\n\n"; 
-    instance->summaryWriter->appendNextLine(summaryLine);
+
+void Game::updateSummary(){
+    updateSummaryOfOneInnings(teamBattingFirstId, teamBowlingFirstId);
+    updateSummaryOfOneInnings(teamBowlingFirstId, teamBattingFirstId);
 }
 
 
@@ -388,23 +378,17 @@ void Game::startGame(){
     instance->updateSummary();
     
     // result
-    if(battingFirst.getTeamruns() < bowlingFirst.getTeamruns()){
+    if(battingFirst.getTeamruns() < bowlingFirst.getTeamruns())
         commentaryLine = bowlingFirst.teamName + " won the match by " + std::to_string(CRIC_VARIABLES::MAX_WKTS - bowlingFirst.getTeamWickets()) + " wickets\n"; 
-        std::cout<<commentaryLine;
-        instance->summaryWriter->appendNextLine(commentaryLine);
-        instance->commentaryWriter->appendNextLine(commentaryLine);
-    }else if(battingFirst.getTeamruns() > bowlingFirst.getTeamruns()){
+    else if(battingFirst.getTeamruns() > bowlingFirst.getTeamruns())
         commentaryLine = battingFirst.teamName + " won the match by " + std::to_string(battingFirst.getTeamruns()-bowlingFirst.getTeamruns()) + " runs\n"; 
-        std::cout<<commentaryLine;
-        instance->summaryWriter->appendNextLine(commentaryLine);
-        instance->commentaryWriter->appendNextLine(commentaryLine);
-    }else{
+    else{
         commentaryLine = "match ended with tie\n";
-        std::cout<<commentaryLine;
-        instance->summaryWriter->appendNextLine(commentaryLine);
-        instance->commentaryWriter->appendNextLine(commentaryLine);
         matchTied = true;
     }
+    std::cout<<commentaryLine;
+    instance->summaryWriter->appendNextLine(commentaryLine);
+    instance->commentaryWriter->appendNextLine(commentaryLine);
 }
 
 
@@ -445,23 +429,17 @@ void Game::startSuperOver(){
     instance->startInnings(teamBowlingFirstId, teamBattingFirstId, obj, CRIC_VARIABLES::SUPEROVERS, CRIC_VARIABLES::MAX_WKTS_IN_SUPEROVER, CRIC_VARIABLES::MAX_OVERS_BOWLER_CAN_BOWL_IN_SUPEROVER, CRIC_VARIABLES::MAX_BALLS_IN_ONE_OVER, target);
     
     // result
-    if(battingFirst.getTeamruns() < bowlingFirst.getTeamruns()){
-        commentaryLine = bowlingFirst.teamName + " won the super over\n"; 
-        std::cout<<commentaryLine;
-        instance->summaryWriter->appendNextLine(commentaryLine);
-        instance->commentaryWriter->appendNextLine(commentaryLine);
-    }else if(battingFirst.getTeamruns() > bowlingFirst.getTeamruns()){
-        commentaryLine = battingFirst.teamName + " won the match the super over\n"; 
-        std::cout<<commentaryLine;
-        instance->summaryWriter->appendNextLine(commentaryLine);
-        instance->commentaryWriter->appendNextLine(commentaryLine);
-    }else{
+    if(battingFirst.getTeamruns() < bowlingFirst.getTeamruns())
+        commentaryLine = bowlingFirst.teamName + " won the super over\n";
+    else if(battingFirst.getTeamruns() > bowlingFirst.getTeamruns())
+        commentaryLine = battingFirst.teamName + " won the super over\n";
+    else{
         commentaryLine = "super over ended with tie\n";
-        std::cout<<commentaryLine;
-        instance->summaryWriter->appendNextLine(commentaryLine);
-        instance->commentaryWriter->appendNextLine(commentaryLine);
         matchTied = true;
     }
+    std::cout<<commentaryLine;
+    instance->summaryWriter->appendNextLine(commentaryLine);
+    instance->commentaryWriter->appendNextLine(commentaryLine);
 }
 
 
