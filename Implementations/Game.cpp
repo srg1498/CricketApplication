@@ -490,5 +490,8 @@ void Game::showSummary(){
             std::string line = obj.getNextLine();
             std::cout<<line<<"\n";
         }
+        
+        std::cout<<"\nPress any Key and hit Enter to exit\n\n";
+        std::cin>>ch;
     }
 }
