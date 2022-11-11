@@ -2,6 +2,7 @@
 #define CONFIGURATIONS_HPP
 #include<string>
 #include<vector>
+#include<unordered_map>
 
 
 namespace PATH_VARIABLES{
@@ -35,6 +36,8 @@ namespace CRIC_VARIABLES{
 
 namespace CODE_VARIABLES{
     std::string WKT = "w";
+    std::unordered_map<std::string, int> INPUT_WORD_TO_INTEGER = {{"BOWLCARD", 0}, {"SHOT", 1}, {"TIMING", 2}}; // <bowlcard> <shot> <timing>
+    char OUTCOMES_SEPARATOR_IN_MEDIA_FILE = '|';
 }
 
 #endif

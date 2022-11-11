@@ -4,6 +4,7 @@
 #include "../Interfaces/ShotOutcomesMediaFolderLoader.h"
 #include "../Interfaces/TeamsMediaFolderLoader.h"
 #include "../Interfaces/CommentaryMediaFolderLoader.h"
+#include "../Interfaces/GameInputLineStructure.h"
 #include<iostream>
 
 
@@ -159,37 +160,42 @@ std::string Game::getOutcomeOnBall(FileReader& obj, int teamBattingId, int teamB
 
     std::vector<std::string> words = stringSplit(line, ' ');
     try{
-        if(words.size() != 3)
+        if(words.size() != CODE_VARIABLES::INPUT_WORD_TO_INTEGER.size())
             throw "error while reading the file...game input for this ball is not mentioned correctly.";
     }catch(const char* error){
         std::cout<<error<<"\n\n";
         exit(0);
     }
-    std::string bowlCard = words[0];
-    toLowerCase(bowlCard);
-    std::string shot = words[1];
-    toLowerCase(shot);
-    std::string timing = words[2];
-    toLowerCase(timing);
+
+    GameInputLineStructure inp = GameInputLineStructure(words[CODE_VARIABLES::INPUT_WORD_TO_INTEGER["BOWLCARD"]],
+                                                        words[CODE_VARIABLES::INPUT_WORD_TO_INTEGER["SHOT"]],
+                                                        words[CODE_VARIABLES::INPUT_WORD_TO_INTEGER["TIMING"]]);
+
+    // std::string bowlCard = words[0];
+    // toLowerCase(bowlCard);
+    // std::string shot = words[1];
+    // toLowerCase(shot);
+    // std::string timing = words[2];
+    // toLowerCase(timing);
     
-    commentaryLine = "   " + instance->teams[teamBowlingId].players[bowlerId].playerName + " bowls " + bowlCard + " to " + instance->teams[teamBattingId].players[batterId].playerName + "\n";
+    commentaryLine = "   " + instance->teams[teamBowlingId].players[bowlerId].playerName + " bowls " + inp.getBowlCard() + " to " + instance->teams[teamBattingId].players[batterId].playerName + "\n";
     overSummary = overSummary + commentaryLine;
     instance->commentaryWriter->appendNextLine(commentaryLine);
 
-    commentaryLine = "   " + instance->teams[teamBattingId].players[batterId].playerName + " tries to play " + shot + " shot " + "\n";
+    commentaryLine = "   " + instance->teams[teamBattingId].players[batterId].playerName + " tries to play " + inp.getShot() + " shot " + "\n";
     overSummary = overSummary + commentaryLine;
     instance->commentaryWriter->appendNextLine(commentaryLine);
     
     try{
-        if(outcomesOnBowlCard.find(bowlCard) == outcomesOnBowlCard.end()){
+        if(outcomesOnBowlCard.find(inp.getBowlCard()) == outcomesOnBowlCard.end()){
             throw "error while reading the input file...bowlcard mentioned in the input file is not correct";
         }else{
             try{
-                if(outcomesOnBowlCard[bowlCard].find(shot) == outcomesOnBowlCard[bowlCard].end()){
+                if(outcomesOnBowlCard[inp.getBowlCard()].find(inp.getShot()) == outcomesOnBowlCard[inp.getBowlCard()].end()){
                     throw "error while reading the input file...shot mentioned in the input file is not correct";    
                 }else{
                     try{
-                        if(outcomesOnBowlCard[bowlCard][shot].find(timing) == outcomesOnBowlCard[bowlCard][shot].end()){
+                        if(outcomesOnBowlCard[inp.getBowlCard()][inp.getShot()].find(inp.getTiming()) == outcomesOnBowlCard[inp.getBowlCard()][inp.getShot()].end()){
                             throw "error while reading the file...timing mentioned in the input file is not correct";
                         }
                     }catch(const char* error){
@@ -207,7 +213,7 @@ std::string Game::getOutcomeOnBall(FileReader& obj, int teamBattingId, int teamB
         exit(0);
     }
 
-    std::vector<std::string> outcomes = stringSplit(outcomesOnBowlCard[bowlCard][shot][timing], '|');
+    std::vector<std::string> outcomes = stringSplit(outcomesOnBowlCard[inp.getBowlCard()][inp.getShot()][inp.getTiming()], CODE_VARIABLES::OUTCOMES_SEPARATOR_IN_MEDIA_FILE);
     
     srand(time(NULL));
     int randomOutcome = rand()%(outcomes.size());

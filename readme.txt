@@ -12,7 +12,7 @@
   -> gcc version 11.2.0 (GCC)
   
   -> If some changes are done in any of the code files, then use the below command for compiling the code:-
-     g++ -o run app.cpp ./Implementations/Game.cpp ./Implementations/Team.cpp ./Implementations/Player.cpp ./Implementations/MediaFolderLoader.cpp ./Implementations/ShotOutcomesMediaFolderLoader.cpp ./Implementations/TeamsMediaFolderLoader.cpp ./Implementations/CommentaryMediaFolderLoader.cpp ./Implementations/FileReader.cpp ./Implementations/FileWriter.cpp ./Implementations/utilityModules.cpp
+     g++ -o run app.cpp ./Implementations/Game.cpp ./Implementations/Team.cpp ./Implementations/Player.cpp ./Implementations/MediaFolderLoader.cpp ./Implementations/ShotOutcomesMediaFolderLoader.cpp ./Implementations/TeamsMediaFolderLoader.cpp ./Implementations/CommentaryMediaFolderLoader.cpp ./Implementations/FileReader.cpp ./Implementations/FileWriter.cpp ./Implementations/utilityModules.cpp ./Implementations/GameInputLineStructure.cpp
 
 
 
