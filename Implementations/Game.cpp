@@ -284,7 +284,7 @@ void Game::startInnings(int teamBattingId, int teamBowlingId, FileReader& obj, i
                        
 
             // update team runs, team wickets if wicket is taken, batter runs and also runs given away by bowler
-            if(outcomeOnBall == CRIC_VARIABLES::WKT){
+            if(outcomeOnBall == CODE_VARIABLES::WKT){
                 teamBatting.updateTeamWickets();
                 if(teamBatting.getTeamWickets() >= maxWkts){
                     inningsOver = true;
