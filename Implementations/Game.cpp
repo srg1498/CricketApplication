@@ -171,13 +171,7 @@ std::string Game::getOutcomeOnBall(FileReader& obj, int teamBattingId, int teamB
                                                         words[CODE_VARIABLES::INPUT_WORD_TO_INTEGER["SHOT"]],
                                                         words[CODE_VARIABLES::INPUT_WORD_TO_INTEGER["TIMING"]]);
 
-    // std::string bowlCard = words[0];
-    // toLowerCase(bowlCard);
-    // std::string shot = words[1];
-    // toLowerCase(shot);
-    // std::string timing = words[2];
-    // toLowerCase(timing);
-    
+
     commentaryLine = "   " + instance->teams[teamBowlingId].players[bowlerId].playerName + " bowls " + inp.getBowlCard() + " to " + instance->teams[teamBattingId].players[batterId].playerName + "\n";
     overSummary = overSummary + commentaryLine;
     instance->commentaryWriter->appendNextLine(commentaryLine);

@@ -1,57 +1,57 @@
-india has won the toss and decided to bat first
+australia has won the toss and decided to bowl first
 
 
 india batting scorecard:-
 
 ashwin scored 0 runs from 1 balls
-bhuvneshwar kumar scored 7 runs from 5 balls
+bhuvneshwar kumar scored 9 runs from 7 balls
 chahal scored 0 runs from 1 balls
 hardik pandya scored 0 runs from 1 balls
 jasprit bumrah scored 3 runs from 2 balls
 kl rahul scored 4 runs from 3 balls
-mahendra singh dhoni scored 19 runs from 7 balls
-mohammad shami scored 3 runs from 3 balls
-rohit sharma scored 0 runs from 1 balls
-surya kumar yadav scored 7 runs from 3 balls
-virat kohli scored 0 runs from 2 balls
+mahendra singh dhoni scored 32 runs from 10 balls
+mohammad shami scored 0 runs from 1 balls
+rohit sharma scored 4 runs from 3 balls
+surya kumar yadav scored 9 runs from 9 balls
+virat kohli scored 10 runs from 6 balls
 
 australia bowling scorecard:-
 
 camron green gave away 0 runs from 0 balls
-hazelwood gave away 6 runs from 6 balls
+hazelwood gave away 29 runs from 12 balls
 maxwell gave away 0 runs from 0 balls
-mitchell starc gave away 0 runs from 0 balls
-pat cummins gave away 20 runs from 12 balls
-stoinis gave away 17 runs from 11 balls
+mitchell starc gave away 17 runs from 12 balls
+pat cummins gave away 25 runs from 18 balls
+stoinis gave away 0 runs from 2 balls
 tim david gave away 0 runs from 0 balls
 zampa gave away 0 runs from 0 balls
 
-india score- 43/10
+india score- 71/10
 
 
 australia batting scorecard:-
 
-aaron finch scored 14 runs from 14 balls
-camron green scored 0 runs from 1 balls
-david warner scored 3 runs from 2 balls
+aaron finch scored 5 runs from 5 balls
+camron green scored 5 runs from 7 balls
+david warner scored 35 runs from 26 balls
 hazelwood scored 0 runs from 2 balls
-maxwell scored 16 runs from 14 balls
-mitchell starc scored 0 runs from 2 balls
+maxwell scored 0 runs from 1 balls
+mitchell starc scored 27 runs from 20 balls
 pat cummins scored 0 runs from 2 balls
-stoinis scored 6 runs from 2 balls
-tim david scored 6 runs from 1 balls
+stoinis scored 0 runs from 0 balls
+tim david scored 0 runs from 0 balls
 wade scored 0 runs from 0 balls
 zampa scored 0 runs from 0 balls
 
 india bowling scorecard:-
 
 ashwin gave away 0 runs from 0 balls
-bhuvneshwar kumar gave away 8 runs from 12 balls
-chahal gave away 14 runs from 10 balls
-hardik pandya gave away 12 runs from 6 balls
-jasprit bumrah gave away 11 runs from 12 balls
-mohammad shami gave away 0 runs from 0 balls
+bhuvneshwar kumar gave away 20 runs from 18 balls
+chahal gave away 26 runs from 18 balls
+hardik pandya gave away 11 runs from 12 balls
+jasprit bumrah gave away 11 runs from 9 balls
+mohammad shami gave away 4 runs from 6 balls
 
-australia score- 45/7
+australia score- 72/5
 
-australia won the match by 3 wickets
+australia won the match by 5 wickets
