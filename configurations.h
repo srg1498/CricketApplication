@@ -27,6 +27,8 @@ namespace CRIC_VARIABLES{
     int MAX_OVERS_BOWLER_CAN_BOWL_IN_SUPEROVER = 1;
     
     int MAX_BALLS_IN_ONE_OVER = 6;
+
+    std::string WKT = "w";
 };
 
 #endif

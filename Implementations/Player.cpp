@@ -61,3 +61,8 @@ void Player::updateRunsGivenAway(int runs){
 void Player::updateBallsBowled(){
     ballsBowled++;
 }
+
+
+void Player::resetBallsBowled(){
+    ballsBowled = 0;
+}

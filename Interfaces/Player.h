@@ -22,6 +22,7 @@ class Player{
            void updateWickets();
            void updateRunsGivenAway(int runs);
            void updateBallsBowled();
+           void resetBallsBowled();
            
     private:
             int runsScored;

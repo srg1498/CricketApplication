@@ -126,14 +126,19 @@ int Game::getBowlerForNewOver(std::vector<int>& bowlersIds, int lastBowlerId, in
     std::vector<int> :: iterator pos = std::find(bowlersIds.begin(), bowlersIds.end(), lastBowlerId);
     if(pos != bowlersIds.end())
         bowlersIds.erase(pos);
+    
+    if(bowlersIds.size() == 0){
+        std::cout<<teams[teamBowlingFirstId].teamName<<" has not enough bowlers in their team...Please add more bowlers in the team\n\n";
+        exit(0);
+    }
 
-        srand(time(NULL));       
-        int randomBowler = rand()%(bowlersIds.size());
-        int resId = bowlersIds[randomBowler];
+    srand(time(NULL));       
+    int randomBowler = rand()%(bowlersIds.size());
+    int resId = bowlersIds[randomBowler];
                
-        if((lastBowlerId != -1) && (instance->teams[teamBowlingFirstId].players[lastBowlerId].getBallsBowled() < maxOversBowlerCanBowl*maxBallsBowlerCanBowlInOneOver)){
-            bowlersIds.push_back(lastBowlerId);                       
-        }
+    if((lastBowlerId != -1) && (instance->teams[teamBowlingFirstId].players[lastBowlerId].getBallsBowled() < maxOversBowlerCanBowl*maxBallsBowlerCanBowlInOneOver)){
+        bowlersIds.push_back(lastBowlerId);                       
+    }
 
     return resId;
 }
@@ -153,6 +158,13 @@ std::string Game::getOutcomeOnBall(FileReader& obj, int teamBattingId, int teamB
     }
 
     std::vector<std::string> words = stringSplit(line, ' ');
+    try{
+        if(words.size() != 3)
+            throw "error while reading the file...game input for this ball is not mentioned correctly.";
+    }catch(const char* error){
+        std::cout<<error<<"\n\n";
+        exit(0);
+    }
     std::string bowlCard = words[0];
     toLowerCase(bowlCard);
     std::string shot = words[1];
@@ -202,11 +214,18 @@ std::string Game::getOutcomeOnBall(FileReader& obj, int teamBattingId, int teamB
     std::string outcome = outcomes[randomOutcome]; 
     toLowerCase(outcome);
     
-    std::vector<std::string> comments = instance->commentary[outcome];
-    srand(time(NULL));
-    int randomComment = rand()%(comments.size());
-    overSummary = overSummary + "   " + comments[randomComment]+"\n";
-    instance->commentaryWriter->appendNextLine("   " + comments[randomComment]+"\n");
+    try{
+        if(instance->commentary.find(outcome) == instance->commentary.end())
+            throw "commentary is not mentioned for the given outcome in the media files\n\n";
+        std::vector<std::string> comments = instance->commentary[outcome];
+        srand(time(NULL));
+        int randomComment = rand()%(comments.size());
+        overSummary = overSummary + "   " + comments[randomComment]+"\n";
+        instance->commentaryWriter->appendNextLine("   " + comments[randomComment]+"\n");
+    }catch(const char* error){
+        std::cout<<error;
+        exit(0);
+    }
 
     return outcome;    
 }
@@ -265,7 +284,7 @@ void Game::startInnings(int teamBattingId, int teamBowlingId, FileReader& obj, i
                        
 
             // update team runs, team wickets if wicket is taken, batter runs and also runs given away by bowler
-            if(outcomeOnBall == "w"){
+            if(outcomeOnBall == CRIC_VARIABLES::WKT){
                 teamBatting.updateTeamWickets();
                 if(teamBatting.getTeamWickets() >= maxWkts){
                     inningsOver = true;
@@ -275,26 +294,32 @@ void Game::startInnings(int teamBattingId, int teamBowlingId, FileReader& obj, i
                     strikerId = newBatterId;
                 }       
             }else{
-                int runs = std::stoi(outcomeOnBall);
-                teamBatting.updateTeamRuns(runs);
-                teamBatting.players[strikerId].updateRunsScored(runs);
-                teamBowling.players[newBowlerId].updateRunsGivenAway(runs);
+                try{
+                    int runs = std::stoi(outcomeOnBall);  
 
-                if((target!=-1) && (instance->teams[teamBattingId].getTeamruns() >= target)){
-                    inningsOver = true;
-                    commentaryLine = "   team runs: " + std::to_string(teamBatting.getTeamruns()) + "\n";
-                    instance->commentaryWriter->appendNextLine(commentaryLine);
-                    overSummary = overSummary + commentaryLine;
-                    commentaryLine = "   team wickets: " + std::to_string(teamBatting.getTeamWickets()) + "\n";
-                    instance->commentaryWriter->appendNextLine(commentaryLine);
-                    overSummary = overSummary + commentaryLine;
-                    std::cout<<overSummary;
-                    break;
+                    teamBatting.updateTeamRuns(runs);
+                    teamBatting.players[strikerId].updateRunsScored(runs);
+                    teamBowling.players[newBowlerId].updateRunsGivenAway(runs);
+                    
+                    if((target!=-1) && (instance->teams[teamBattingId].getTeamruns() >= target)){
+                        inningsOver = true;
+                        commentaryLine = "   team runs: " + std::to_string(teamBatting.getTeamruns()) + "\n";
+                        instance->commentaryWriter->appendNextLine(commentaryLine);
+                        overSummary = overSummary + commentaryLine;
+                        commentaryLine = "   team wickets: " + std::to_string(teamBatting.getTeamWickets()) + "\n";
+                        instance->commentaryWriter->appendNextLine(commentaryLine);
+                        overSummary = overSummary + commentaryLine;
+                        std::cout<<overSummary;
+                        break;
+                    }
+                    
+                    // update strike if runs are odd
+                    if(runs%2)
+                        std::swap(strikerId, nonStrikerId);    
+                }catch(...){
+                    std::cout<<"Outcome on this ball is neither wicket nor the valid runs...Its a different string not an integer\n\n";
+                    exit(0);
                 }
-
-                // update strike if runs are odd
-                if(runs%2)
-                    std::swap(strikerId, nonStrikerId);    
             }
                        
             commentaryLine = "   team runs: " + std::to_string(teamBatting.getTeamruns()) + "\n";
@@ -405,6 +430,12 @@ void Game::startSuperOver(){
     battingFirst.resetTeamWickets();
     bowlingFirst.resetTeamRuns();
     bowlingFirst.resetTeamWickets();
+    for(auto& playerId : battingFirst.bowlersIDs){
+        battingFirst.players[playerId].resetBallsBowled();
+    }
+    for(auto& playerId : bowlingFirst.bowlersIDs){
+        bowlingFirst.players[playerId].resetBallsBowled();
+    }
 
     commentaryLine = "\n\n\nLet's begin super over!!!\n\n\n";
     std::cout<<commentaryLine;
