@@ -1,20 +1,21 @@
 #ifndef CONFIGURATIONS_HPP
 #define CONFIGURATIONS_HPP
+
 #include<string>
 #include<vector>
 #include<unordered_map>
 
 
 namespace PATH_VARIABLES{
-    std::string SHOTOUTCOMES_PATH = "./MediaFiles/ShotOutcomes/";
-    std::string TEAMS_PATH = "./MediaFiles/Teams/";
-    std::string COMMENTARY_PATH = "./MediaFiles/Commentary/";
+    std::string SHOTOUTCOMES_PATH = "./gamedata/mediafiles/ShotOutcomes/";
+    std::string TEAMS_PATH = "./gamedata/mediafiles/Teams/";
+    std::string COMMENTARY_PATH = "./gamedata/mediafiles/Commentary/";
 
-    std::string GAME_INPUT_FILEPATH = "./InputsAndOutputs/Inputs/GameInput.txt";
-    std::string GAME_SUPER_OVER_INPUT_FILEPATH = "./InputsAndOutputs/Inputs/GameSuperOverInput.txt";
+    std::string GAME_INPUT_FILEPATH = "./gamedata/input/gameinput/GameInput.txt";
+    std::string GAME_SUPER_OVER_INPUT_FILEPATH = "./gamedata/input/gameinput/GameSuperOverInput.txt";
     
-    std::string GAME_COMMENTARY_FILEPATH = "./InputsAndOutputs/Outputs/GameCommentary.txt";
-    std::string MATCH_SUMMARY_FILEPATH = "./InputsAndOutputs/Outputs/MatchSummary.txt";
+    std::string GAME_COMMENTARY_FILEPATH = "./gamedata/output/GameCommentary.txt";
+    std::string MATCH_SUMMARY_FILEPATH = "./gamedata/output/MatchSummary.txt";
 };
 
 
